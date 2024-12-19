@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesaj de Crăciun</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            color: #ff0000;
+            font-size: 2em;
+            text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff4500, 0 0 30px #ff4500;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #ff0000, 0 0 15px #ff4500, 0 0 30px #ff6347, 0 0 45px #ff4500;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347, 0 0 40px #ff6347, 0 0 60px #ff4500;
+            }
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: white;
+            animation: fade-in 3s ease-in-out;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Crăciun Fericit și un An Nou Fericit</div>
+        <div>vă urează <strong>SVMCDESIGN</strong>!</div>
+        <div class="message">
+            <p>Fie ca aceste sărbători să vă aducă lumină, bucurie și momente de neuitat alături de cei dragi! Mulțumim că faceți parte din povestea noastră.</p>
+        </div>
+    </div>
+</body>
+</html>
